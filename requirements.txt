@@ -1,0 +1,5 @@
+mcp
+sqlalchemy
+pg8000
+pandas
+uvicorn[standard]
