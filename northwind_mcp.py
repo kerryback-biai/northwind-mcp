@@ -12,7 +12,7 @@ PASS   = os.environ.get("DB_PASS", "northwind_read_only")
 
 engine = create_engine(f"postgresql+pg8000://{USER}:{PASS}@{HOST}:{PORT}/{DBNAME}")
 
-mcp = FastMCP("Northwind")
+mcp = FastMCP("Northwind", host="0.0.0.0")
 
 
 @mcp.tool()
