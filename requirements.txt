@@ -1,4 +1,7 @@
-mcp
+# mcp 2.x renamed FastMCP to MCPServer and changed the API. This server is v1
+# code, and nothing here was pinned, so the first rebuild after 2.x shipped
+# failed at import. Pin until the server is migrated.
+mcp<2
 sqlalchemy
 pg8000
 pandas
